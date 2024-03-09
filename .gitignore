@@ -9,3 +9,7 @@ node_modules/
 cloudinary_python.txt
 kaggle.json
 .venv/
+.gitpod.yml
+.python-version
+inputs/
+outputs/
