@@ -1,13 +1,10 @@
 import streamlit as st
-from src.images import load_image
 
 def page_summary_body():
     st.title("LoanerAI Project Summary")
 
-    st.image(
-        load_image("logo.webp"),
-        use_column_width='auto',
-        )
+    st.image('src/images/logo.webp',
+        use_column_width='auto')
 
     # Quick Project Summary
     st.write("### Quick Project Summary")
