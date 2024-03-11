@@ -5,7 +5,7 @@ def page_summary_body():
     st.title("LoanerAI Project Summary")
 
     st.image(
-        load_image("logo"),
+        load_image("logo.webp"),
         use_column_width='auto',
         )
 
