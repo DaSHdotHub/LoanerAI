@@ -6,7 +6,7 @@ from src.machine_learning.predictive_analysis_ui import (
 )
 
 
-def page_prospect_body():
+def page_applicant_body():
     # Load predict risk files
     version = 'v1'
     risk_pipe_dc_fe = load_pkl_file(

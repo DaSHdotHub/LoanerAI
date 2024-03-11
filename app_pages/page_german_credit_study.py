@@ -12,7 +12,7 @@ sns.set_style("whitegrid")
 def page_german_credit_study_body():
 
     # load data
-    df = load_risko_data()
+    df = load_risk_data()
 
     # hard copied from risk customer study notebook
     vars_to_study = [col for col in df.columns if col != 'Risk']
