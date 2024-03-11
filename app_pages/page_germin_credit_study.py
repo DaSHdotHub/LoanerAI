@@ -9,19 +9,19 @@ import seaborn as sns
 sns.set_style("whitegrid")
 
 
-def page_churned_customer_study_body():
+def page_german_credit_study_body():
 
     # load data
     df = load_risko_data()
 
-    # hard copied from churned customer study notebook
+    # hard copied from risk customer study notebook
     vars_to_study = [col for col in df.columns if col != 'Risk']
 
     st.write("### German Credit Data Study")
     st.info(
         f"* An organization is interested in understanding the patterns from the applicant base "
         f"so that the client can learn the most relevant variables correlated "
-        f"to a churned customer.")
+        f"to an applicant.")
 
     # inspect data
     if st.checkbox("Inspect Applicants"):
@@ -77,17 +77,17 @@ def page_churned_customer_study_body():
 
     # Individual plots per variable
     if st.checkbox("Risk per Variable"):
-        churn_level_per_variable(df_eda)
+        risk_per_variable(df_eda)
 
     # Parallel plot
     if st.checkbox("Parallel Plot"):
         st.write(
             f"* Information in yellow indicates the profile from a defaulted applicant")
-        parallel_plot_churn(df_eda)
+        parallel_plot_risk(df_eda)
 
 
 # function created using "G1_GermanCreditData" notebook code - "Variables Distribution by Risk" section
-def churn_level_per_variable(df_eda):
+def risk_per_variable(df_eda):
     target_var = 'Risk'
 
     for col in df_eda.drop([target_var], axis=1).columns.to_list():
