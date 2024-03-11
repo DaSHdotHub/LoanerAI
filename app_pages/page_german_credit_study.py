@@ -79,12 +79,6 @@ def page_german_credit_study_body():
     if st.checkbox("Risk per Variable"):
         risk_per_variable(df_eda)
 
-    # Parallel plot
-    if st.checkbox("Parallel Plot"):
-        st.write(
-            f"* Information in yellow indicates the profile from a defaulted applicant")
-        parallel_plot_risk(df_eda)
-
 
 # function created using "G1_GermanCreditData" notebook code - "Variables Distribution by Risk" section
 def risk_per_variable(df_eda):
