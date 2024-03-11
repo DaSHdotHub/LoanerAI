@@ -1,3 +1,10 @@
 {
+    "name": "LoanerAI",
+    "description": "This app calculates risks with machine learning methods.",
+    "keywords": [
+        "machine learning",
+        "risks",
+        "calculation"
+    ],
     "stack": "heroku-20"
  }
