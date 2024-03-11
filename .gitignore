@@ -12,4 +12,4 @@ kaggle.json
 .gitpod.yml
 .python-version
 inputs/
-outputs/
+outputs/datasets/*
