@@ -167,7 +167,7 @@ pip3 install -r requirements.txt
 
 ## Credits 
 
-### Resources - Code and General Idea
+### Ressources - Code and General Idea
 
 The foundation of this project was provided by the *CodeInstitute Walkthrough 2 project* - "Churnometer". Leveraging its groundwork, I integrated numerous custom functions to streamline model selection, hyperparameter tuning, and evaluation processes. These functions were adapted to enhance their versatility and centralized accessibility. Key modifications included:
 
@@ -179,17 +179,21 @@ The foundation of this project was provided by the *CodeInstitute Walkthrough 2 
 
 ### Content 
 
-- Kaggle.com for providing the dataset(s)
+- Kaggle.com for providing the [dataset(s)](https://www.kaggle.com/code/kabure/predicting-credit-risk-model-pipeline/input)
+
+### References
 - Kaggle.com | [Insigths for Encoding on a Notebook example](https://www.kaggle.com/code/aimack/how-to-encode-numerical-categorical-data)
 - Medium.com | [Feature Encoding](https://medium.com/@denizgunay/feature-encoding-f099a6c1abe8)
 - Medium.com | [Numerical Encoding](https://medium.com/@pp1222001/the-ultimate-guide-to-encoding-numerical-features-in-machine-learning-440c0e7752d#:~:text=Encoding%20numerical%20features%20refers%20to,suitable%20for%20machine%20learning%20algorithms.&text=However%2Cthere%20are%20scenarios%20where,performance%20of%20machine%20learning%20models.)
 - Texts for this README were corrected and improved by ChatGPTv3.5
+- Convertio.io | [For image transformation](https://convertio.co/)
+- Favicon.io | [Browse free icons!](https://favicon.io/)
 
 
 ### Media
 
 - None
 
-## Acknowledgements (optional)
+## Acknowledgements
 * Thank the people that provided support through this project.
 
