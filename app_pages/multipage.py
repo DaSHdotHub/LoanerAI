@@ -9,7 +9,7 @@ class MultiPage:
 
         st.set_page_config(
             page_title=self.app_name,
-            page_icon="🖥️") # Add Icon here
+            page_icon="/src/images/favicon/favicon.ico") # Add Icon here
     
     def add_page(self, title, func) -> None: 
         self.pages.append({"title": title, "function": func })
