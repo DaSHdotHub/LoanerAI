@@ -1,5 +1,5 @@
 import streamlit as st
-from src.data_management import load_image
+from src.images import load_image
 
 def page_summary_body():
     st.title("LoanerAI Project Summary")
