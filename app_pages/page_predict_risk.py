@@ -27,20 +27,20 @@ def page_predict_risk_body():
     st.write("### ML Pipeline: Predict Prospect Risk")
     # display pipeline training summary conclusions
     st.info(
-    f"* The training set showed high accuracy (93%) with excellent recall on both 'Risk' (91%) and 'No Risk' (94%) classes, "
-    f"demonstrating the model's ability to correctly identify both risky and safe applicants in the training phase. \n"
-    f"* However, the performance on the test set dropped significantly, with an overall accuracy of 64%. Specifically, "
-    f"the recall for 'Risk' and 'No Risk' classes in the test set was 0.41 and 0.76, respectively. This indicates the model's "
-    f"reduced effectiveness at generalizing to new, unseen data, suggesting overfitting during the training process. \n"
-    f"* The noticeable performance discrepancy between training and test sets underscores the need for model improvements. "
-    f"Enhancing the model's generalization capabilities could involve techniques such as cross-validation, regularization, "
-    f"and exploring different model architectures or algorithms. \n"
-    f"* Given the project's focus on minimizing the risk of default by accurately identifying 'No Risk' applicants, future "
-    f"efforts should also explore methods to boost the recall for 'No Risk' class in unseen data, potentially through adjusting "
-    f"the model's decision threshold, employing cost-sensitive learning, or addressing class imbalance. \n"
-    f"* Enhancements are indeed warranted to better align the model's performance with the project objectives, particularly "
-    f"in improving its ability to generalize from training to real-world applications."
-)
+        f"* The training set showed high accuracy (93%) with excellent recall on both 'Risk' (91%) and 'No Risk' (94%) classes, "
+        f"demonstrating the model's ability to correctly identify both risky and safe applicants in the training phase. \n"
+        f"* However, the performance on the test set dropped significantly, with an overall accuracy of 64%. Specifically, "
+        f"the recall for 'Risk' and 'No Risk' classes in the test set was 0.41 and 0.76, respectively. This indicates the model's "
+        f"reduced effectiveness at generalizing to new, unseen data, suggesting overfitting during the training process. \n"
+        f"* The noticeable performance discrepancy between training and test sets underscores the need for model improvements. "
+        f"Enhancing the model's generalization capabilities could involve techniques such as cross-validation, regularization, "
+        f"and exploring different model architectures or algorithms. \n"
+        f"* Given the project's focus on minimizing the risk of default by accurately identifying 'No Risk' applicants, future "
+        f"efforts should also explore methods to boost the recall for 'No Risk' class in unseen data, potentially through adjusting "
+        f"the model's decision threshold, employing cost-sensitive learning, or addressing class imbalance. \n"
+        f"* Enhancements are indeed warranted to better align the model's performance with the project objectives, particularly "
+        f"in improving its ability to generalize from training to real-world applications."
+    )
 
     # show pipelines
     st.write("---")

@@ -17,7 +17,6 @@ def page_churned_customer_study_body():
     # hard copied from churned customer study notebook
     vars_to_study = [col for col in df.columns if col != 'Risk']
 
-
     st.write("### German Credit Data Study")
     st.info(
         f"* An organization is interested in understanding the patterns from the applicant base "
