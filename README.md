@@ -96,7 +96,7 @@ Conduct logistic regression analysis with "Risk" as the dependent variable and c
 
 
 ## Unfixed Bugs
-* None
+Some *FutureWarning* will pop up due to *deprecation* issues. These are only warnings and not errors.
 
 ## Deployment
 ### Heroku
@@ -118,42 +118,47 @@ Conduct logistic regression analysis with "Risk" as the dependent variable and c
 6. If the slug size is too large then add large files not required for the app to the .slugignore file.
 
 ### GitPod
-1. Create a new workspace
-2. Paste the repository link <code>https://github.com/DaSHdotHub/LoanerAI.git</code>
-3. E.g. select VS Code (Browser) and Standard, click Continue
-4. For this project to run python v3.18.8 or equal should be installed.
-<code>
-#python installation
+1. Create a new workspace.
+2. Paste the repository link `https://github.com/DaSHdotHub/LoanerAI.git`.
+3. Select VS Code (Browser) and Standard, then click Continue.
+4. For this project to run, Python version 3.8.18 or higher should be installed.
+
+```python
+# Python installation
 pyenv install 3.8.18
 pyenv local 3.8.18
+# creating virtual environment
 python3 -m venv venv
+# activating virtual environment
 source venv/bin/activate
-pip3 -r install requirements.txt
-</code>
-
+# install libs and extensions
+pip3 install -r requirements.txt
+```
 
 ## Main Data Analysis and Machine Learning Libraries
+
 | Library | Description |
 |---------|-------------|
-| numpy | Fundamental package for scientific computing with Python. Supports arrays, mathematical operations, and more. |
-| pandas | Provides high-performance, easy-to-use data structures and data analysis tools. Alos loading and saving data.|
-| matplotlib | Plotting library for Python and NumPy, offering a variety of static, animated, and interactive visualizations. |
-| seaborn | Data visualization library based on matplotlib, providing a high-level interface for drawing attractive statistical graphics. |
-| ydata-profiling | Tool for comprehensive automated data profiling. Gives insights into data quality, distribution, and relationships. Note: The correct name might be `pandas-profiling`. |
-| plotly | Interactive graphing library for making interactive plots and dashboards across multiple programming languages. |
-| ppscore | Calculates the Predictive Power Score (PPS) as an alternative to the correlation coefficient. |
-| streamlit | Open-source app framework for Machine Learning and Data Science projects. Simplifies the creation of apps. |
-| feature-engine | Library for feature engineering in machine learning, supporting transformations, selections, and encodings. |
-| imbalanced-learn | Offers solutions to deal with imbalanced datasets, including resampling techniques. |
-| scikit-learn | Machine learning library featuring various classification, regression, and clustering algorithms. |
-| xgboost | Optimized distributed gradient boosting library designed for efficiency, flexibility, and portability. |
-| yellowbrick | Visual diagnostic tools built on matplotlib to facilitate machine learning model selection and tuning. |
-| Jinja2 | Modern and designer-friendly templating language for Python, widely used for web applications. |
-| MarkupSafe | Ensures string representation is safe for HTML and XML, often used with web development libraries. |
-| protobuf | Protocol Buffers, Google's data interchange format, useful for serializing structured data. |
-| ipywidgets | Provides interactive HTML widgets for Jupyter notebooks and the IPython kernel. |
-| altair | Declarative statistical visualization library for Python, designed for building a wide range of visualizations. |
-| joblib | Set of tools for lightweight pipelining in Python, mainly used for saving and loading objects that use NumPy data structures. |
+| [numpy](https://numpy.org/) | Fundamental package for scientific computing with Python. Supports arrays, mathematical operations, and more. |
+| [pandas](https://pandas.pydata.org/) | Provides high-performance, easy-to-use data structures and data analysis tools. Also loading and saving data.|
+| [matplotlib](https://matplotlib.org/) | Plotting library for Python and NumPy, offering a variety of static, animated, and interactive visualizations. |
+| [seaborn](https://seaborn.pydata.org/) | Data visualization library based on matplotlib, providing a high-level interface for drawing attractive statistical graphics. |
+| [pandas-profiling](https://github.com/pandas-profiling/pandas-profiling) | Tool for comprehensive automated data profiling. Gives insights into data quality, distribution, and relationships. |
+| [plotly](https://plotly.com/python/) | Interactive graphing library for making interactive plots and dashboards across multiple programming languages. |
+| [ppscore](https://github.com/8080labs/ppscore) | Calculates the Predictive Power Score (PPS) as an alternative to the correlation coefficient. |
+| [streamlit](https://www.streamlit.io/) | Open-source app framework for Machine Learning and Data Science projects. Simplifies the creation of apps. |
+| [feature-engine](https://feature-engine.readthedocs.io/en/latest/) | Library for feature engineering in machine learning, supporting transformations, selections, and encodings. |
+| [imbalanced-learn](https://imbalanced-learn.org/stable/) | Offers solutions to deal with imbalanced datasets, including resampling techniques. |
+| [scikit-learn](https://scikit-learn.org/stable/) | Machine learning library featuring various classification, regression, and clustering algorithms. |
+| [xgboost](https://xgboost.readthedocs.io/en/latest/) | Optimized distributed gradient boosting library designed for efficiency, flexibility, and portability. |
+| [yellowbrick](https://www.scikit-yb.org/en/latest/) | Visual diagnostic tools built on matplotlib to facilitate machine learning model selection and tuning. |
+| [Jinja2](https://jinja.palletsprojects.com/en/3.0.x/) | Modern and designer-friendly templating language for Python, widely used for web applications. |
+| [MarkupSafe](https://palletsprojects.com/p/markupsafe/) | Ensures string representation is safe for HTML and XML, often used with web development libraries. |
+| [protobuf](https://developers.google.com/protocol-buffers) | Protocol Buffers, Google's data interchange format, useful for serializing structured data. |
+| [ipywidgets](https://ipywidgets.readthedocs.io/en/latest/) | Provides interactive HTML widgets for Jupyter notebooks and the IPython kernel. |
+| [altair](https://altair-viz.github.io/) | Declarative statistical visualization library for Python, designed for building a wide range of visualizations. |
+| [joblib](https://joblib.readthedocs.io/en/latest/) | Set of tools for lightweight pipelining in Python, mainly used for saving and loading objects that use NumPy data structures. |
+
 
 
 ## Credits 
@@ -174,6 +179,7 @@ The foundation of this project was provided by the *CodeInstitute Walkthrough 2 
 - Kaggle.com | [Insigths for Encoding on a Notebook example](https://www.kaggle.com/code/aimack/how-to-encode-numerical-categorical-data)
 - Medium.com | [Feature Encoding](https://medium.com/@denizgunay/feature-encoding-f099a6c1abe8)
 - Medium.com | [Numerical Encoding](https://medium.com/@pp1222001/the-ultimate-guide-to-encoding-numerical-features-in-machine-learning-440c0e7752d#:~:text=Encoding%20numerical%20features%20refers%20to,suitable%20for%20machine%20learning%20algorithms.&text=However%2Cthere%20are%20scenarios%20where,performance%20of%20machine%20learning%20models.)
+- Texts for this README were corrected and improved by ChatGPTv3.5
 
 
 ### Media
