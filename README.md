@@ -1,3 +1,7 @@
+# LoanerAI
+**GitHub =>** [Documentation](https://github.com/DaSHdotHub/LoanerAI)
+![Logo](src/images/logo.webp)
+
 ## Build with
 * [GitHub](https://www.github.com/)
 * [GitPod](https://www.gitpod.io/)
