@@ -40,7 +40,7 @@ def page_predict_risk_body():
     st.write(risk_pipe_dc_fe)
 
     st.write("* The second is for feature scaling and modelling.")
-    st.write(riskn_pipe_model)
+    st.write(risk_pipe_model)
 
     # show feature importance plot
     st.write("---")
